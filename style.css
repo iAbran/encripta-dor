@@ -19,7 +19,7 @@ body {
 }
 
 .encriptar-box, .encriptado-box {
-    width: 45%;
+    width: 40%;
     border: 2px solid rgba(255, 255, 255, 0.336);
     border-radius: 15px;
     margin: 0 30px;
@@ -30,6 +30,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    position: relative;
+    left: 30px;
 }
 
 .caja-encriptar, .caja-encriptado {
@@ -80,6 +83,92 @@ body {
     background-color: rgba(255, 255, 255, 0.233);
 }
 
+footer{
+    background-color: rgb(37, 73, 80);
+    padding: 500px;
+    width: 100%;
+    margin-top: 140px;
+}
+
+.footer-container{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.iconoSocial{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+.iconoSocial a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.iconoSocial a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.iconoSocial a:hover{
+    background-color: black;
+    transition: 0.5;
+}
+
+.iconoSocial a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+
+.footer-nav{
+    margin: 30px 0px;
+}
+
+.footer-nav ul{
+    display: flex;
+    justify-content: center;   
+}
+
+.footer-nav ul li{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footer-nav ul li a:hover{
+    opacity: 1;
+}
+
+.footerbottom{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.footerbottom p{
+    color: white;   
+}
+
+.designer{
+    opacity:  0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
 /* Estilos para dispositivos móviles */
 @media only screen and (max-width: 768px) {
     .container {
@@ -90,4 +179,32 @@ body {
         width: 80%;
         margin: 20px 0;
     }
+
+    .footer-nav {
+        flex-direction: column;
+    }
+
+    .footer-nav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .iconoSocial {
+        margin-top: 20px; 
+    }
+
+    .iconoSocial a {
+        padding: 15px; 
+    }
+
+    .iconoSocial a i {
+        font-size: 2.5em; 
+    }
+
+    .footerbottom p {
+        font-size: 0.9em;
+    }
+
+
 }
