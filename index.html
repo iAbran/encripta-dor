@@ -1,0 +1,43 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+
+        <header>
+            <h1 class="titulo"  >Encriptador</h1>
+        </header>
+
+        <main class="container">
+
+            <section class="encriptar-box">
+                <textarea id="caja-encriptar" name="caja-encriptar" class="caja-encriptar" cols="35" rows="15" placeholder="Ingrese el texto aquí"></textarea>
+    
+                <p class="terminos">&#9888; No letras mayúsculas o signos</p>
+    
+                <div class="botones">
+                    <button class="encriptar-btn" onclick="encriptar()" type="button">Encriptar</button>
+                    <button class="desencriptar-btn" onclick="desencriptar()" type="button">Desencriptar</button>
+                </div>
+      
+            </section>
+    
+            <section class="encriptado-box">
+                <textarea  id="caja-encriptado" name="" class="caja-encriptado" cols="35" rows="15" placeholder="Ingrese un texto que deseas encriptar"></textarea>
+
+                <div class="copiar-btn">
+                    <button type="button" class="copiar" value="boton-copiar" id="boton-copiar" onclick="copy()">Copy</button>
+                    <div class="aviso" style="display: none;">Copied</div>                
+                </div>
+            </section>
+    
+        </main>
+       
+        <script src="app.js"></script>
+    </body>
+    </html>
